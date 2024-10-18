@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/logo.png" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yummy</title>
+    </head>
+    <body class="overflow-hidden ">
+    <div class="loading position-fixed d-flex top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center text-white ">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div  class="side-nav d-flex position-fixed ">
+    <div class="hidden-nav bg-black text-white d-flex flex-column justify-content-between min-vh-100 p-4">
+        <div class="nav-links">
+            <ul class="list-unstyled overflow-hidden">
+                <li id="search" class="py-2 position-relative">Search</li>
+                <li id="categories" class="py-2 position-relative">Categories</li>
+                <li id="area" class="py-2 position-relative">Area</li>
+                <li id="ingredients" class="py-2 position-relative">Ingredients</li>
+                <li id="contactUs" class="py-2 position-relative">Contact Us</li>
+            </ul>
+        </div>
+        <div class="nav-footer">
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <div class="open d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black ">
+        <img src="./images/logo.png" alt="" />
+        <div class="open-close-icon fs-4">
+            <i id="openIcon" class="fa-solid fa-bars fa-2x"></i>
+            <i id="closeIcon" class="fa-solid fa-xmark fa-2x d-none"></i>
+        </div>
+        <div class="social-icon d-flex gap-1 flex-column">
+            <i class="fa-solid fa-globe c"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+    </div>
+    <div class="container w-75" id="searchContainer">
+        <div id="miniForm" class="row py-4 mini-form" >
+            
+        </div>
+        <div class="inner-loading-screen d-flex text-white top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-none">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div id="serachResult" class="container serach-result">
+            <div class="row py-5 g-4 " id="rowSearchData"></div>
+        </div>
+    </div>
+    <div class="container p-3">
+        <div id="rowData" class="row py-5 g-4  "></div>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    </body>
+</html>
